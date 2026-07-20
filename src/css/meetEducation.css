@@ -166,8 +166,8 @@ width: 8rem;
 
 /* מערך חינוך */
 .goal-img-arrEdu {
-    margin-top: 0.7rem;
-    width: 5rem;
+    margin-top: 0.1rem;
+    width: 4rem;
 }
 
 .grow-shrink {
@@ -280,12 +280,12 @@ width: 8rem;
     justify-content: space-around;
 }
 .mashakEdu {
-    width: 5rem;
+    width: 4rem;
     border-radius: 0.5rem;
    
 }
 .mashakExp {
-    width: 5rem;
+    width: 4rem;
     border-radius: 0.5rem;
 }
 
@@ -313,7 +313,7 @@ width: 8rem;
 .text-swich {
   font-family: "rubik";
   color: #477fa3;
-  font-size: 0.95rem;
+  font-size: 1rem;
   padding: 0.5rem;
 }
 
@@ -472,7 +472,7 @@ width: 8rem;
 .text-swich {
   font-family: "rubik";
   color: #477fa3;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   padding: 0.5rem;
 }
 .arrows-container {
@@ -493,7 +493,7 @@ width: 8rem;
 }
 @media (max-height: 750px) {
   .professeion-edu-contianer {
-    width: 18rem;
+    width: 17rem;
     padding: 1rem 0.5rem;
     border-radius: 1rem;
     display: flex;
@@ -504,7 +504,7 @@ width: 8rem;
   .text-swich {
     font-family: "rubik";
     color: #477fa3;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0.2rem;
   }
   .arrows-container {
@@ -525,3 +525,6 @@ width: 8rem;
 
 
 }
+
+
+

@@ -5,7 +5,7 @@
 }
 
 .nav-btns {
-    width: 4.5rem;
+    width: 4rem;
     /* margin: 1rem; */
 }
 .nextBtn {
@@ -92,3 +92,6 @@
     margin-top: -1rem;
     margin-left: 9rem;
 } 
+@media (max-height: 750px) {
+
+    }

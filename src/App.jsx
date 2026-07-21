@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 // import { useState } from "react";
 import "./css/App.css";
 import til from "./assets/images/tilLogo.svg";
-import logoHinoh from "./assets/images/logoHinoh.svg";
+// import logoHinoh from "./assets/images/logoHinoh.svg";
 import bahadEduIcon from "./assets/images/bahadEduIcon.png";
 import OpeningPage from "./mainPages/OpeningPage";
 import Content from "./mainPages/Content";

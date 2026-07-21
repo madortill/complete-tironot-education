@@ -8,14 +8,13 @@ import bahadEduIcon from "./assets/images/bahadEduIcon.png";
 import OpeningPage from "./mainPages/OpeningPage";
 import Content from "./mainPages/Content";
 import EndPage from "./mainPages/EndPage";
-
 function App() {
 
   return (
     <>
       <div className="app">
-      <img src={bahadEduIcon} alt="icon"  className="bahadEdu" />
-      <img src={logoHinoh} alt="logoHinoh"  className="logoHinoh" />
+      <img src={bahadEduIcon} alt="icon" className="bahadEdu" />
+      {/* <img src={logoHinoh} alt="logoHinoh" className="logoHinoh" /> */}
       
       <Routes>
       <Route path="/" element={<OpeningPage/>} />

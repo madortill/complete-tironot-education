@@ -74,7 +74,7 @@
   }
   .tooltip {
     font-family: "rubik";
-    color: #004288;
+    color: #D3EEFF;
   }
 
   .popup-overlay {
@@ -230,15 +230,20 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    margin-top: -4rem;
+    justify-content: center;
+  
+    gap: 7rem;
+  
+    width: fit-content;
+    margin: -1.5rem auto 0;
   }
+  
 
   .narrowBtnFlip-L {
     transform: rotate(180deg);
   }
   .narrowBtnFlip {
-    width: 3rem;
+    width: 2rem;
   }
   .narrowBtnFlip.disabled {
     opacity: 0.4;
@@ -269,9 +274,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  margin-top: -3rem;
-  width: 23rem;
+  justify-content: center;
+
+  gap: 7rem;
+
+  width: fit-content;
+  margin: -1.5rem auto 0;
 }
 .textFront {
   /* font-size: 3rem; */

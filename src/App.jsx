@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 // import { useState } from "react";
 import "./css/App.css";
 import til from "./assets/images/tilLogo.svg";
-// import logoHinoh from "./assets/images/logoHinoh.svg";
+import logoHinoh from "./assets/images/hinoh-logo.svg";
 import bahadEduIcon from "./assets/images/bahadEduIcon.png";
 import OpeningPage from "./mainPages/OpeningPage";
 import Content from "./mainPages/Content";
@@ -14,7 +14,7 @@ function App() {
     <>
       <div className="app">
       <img src={bahadEduIcon} alt="icon" className="bahadEdu" />
-      {/* <img src={logoHinoh} alt="logoHinoh" className="logoHinoh" /> */}
+      <img src={logoHinoh} alt="logoHinoh" className="logoHinoh" />
       
       <Routes>
       <Route path="/" element={<OpeningPage/>} />

@@ -17,7 +17,7 @@ const initialLearningProgress = {
 
   unlockedPages: [
     [true], // מבוא
-    [true, false, true, true, true, true], // חיל החינוך- 2,5
+    [true, false, true, true, false, true], // חיל החינוך- 2,5
     [true, false, true, true, true, true, true, true, false, true], // רוח צה"ל 2,9
     [true, false, false, true, true], // מגילת צה"ל 2,3
   ],

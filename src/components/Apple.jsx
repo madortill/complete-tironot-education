@@ -63,6 +63,10 @@ function Apple({ onBack, openedApple, hodCompleted, setHodCompleted }) {
     return null;
   }
 
+  const isIPhone =
+  typeof navigator !== "undefined" &&
+  /iPhone|iPod/i.test(navigator.userAgent);
+
   return (
     <div>
       <div className="apple-container">
@@ -178,23 +182,28 @@ function Apple({ onBack, openedApple, hodCompleted, setHodCompleted }) {
           </foreignObject>
 
           {isHod && (
-  <foreignObject x="56" y="319" width="260" height="105">
+  <foreignObject
+    x={isIPhone ? 45 : 56}
+    y={isIPhone ? 315 : 319}
+    width={isIPhone ? 280 : 260}
+    height="105"
+  >
     <div
       xmlns="http://www.w3.org/1999/xhtml"
-      dir="rtl"
       style={{
         position: "relative",
         width: "100%",
         height: "100%",
         boxSizing: "border-box",
 
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-
         color: "white",
         textAlign: "center",
+        direction: "rtl",
         textShadow: "0 1px 3px rgba(80, 0, 0, 0.5)",
+
+        transform: isIPhone
+          ? "translateX(-0.4rem)"
+          : "none",
 
         WebkitTextSizeAdjust: "100%",
         textSizeAdjust: "100%",
@@ -206,12 +215,10 @@ function Apple({ onBack, openedApple, hodCompleted, setHodCompleted }) {
           width: "100%",
           margin: 0,
           padding: 0,
-          fontSize: "17px",
+          fontSize: isIPhone ? "16px" : "17px",
           lineHeight: 1.2,
           textAlign: "center",
           direction: "rtl",
-          unicodeBidi: "plaintext",
-          boxSizing: "border-box",
         }}
       >
         {currentApple.text2}
@@ -223,12 +230,10 @@ function Apple({ onBack, openedApple, hodCompleted, setHodCompleted }) {
           width: "100%",
           margin: "0.2rem 0 0",
           padding: 0,
-          fontSize: "14px",
+          fontSize: isIPhone ? "13px" : "14px",
           lineHeight: 1.2,
           textAlign: "center",
           direction: "rtl",
-          unicodeBidi: "plaintext",
-          boxSizing: "border-box",
         }}
       >
         {currentApple.textWorm}
@@ -237,13 +242,12 @@ function Apple({ onBack, openedApple, hodCompleted, setHodCompleted }) {
       <button
         type="button"
         className="hod-btn"
-        aria-label="פתיחת מידע על מגמות הו״ד"
         onClick={() => setShowPopup(true)}
+        aria-label="פתיחת מידע על מגמות הו״ד"
         style={{
           position: "absolute",
-          right: "50%",
-          bottom: "1rem",
-          transform: "translateX(50%)",
+          right: isIPhone ? "5.4rem" : "6rem",
+          bottom: isIPhone ? "0.7rem" : "1rem",
           margin: 0,
           cursor: "pointer",
         }}

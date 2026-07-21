@@ -238,7 +238,7 @@
     transform: rotate(180deg);
   }
   .narrowBtnFlip {
-    width: 4rem;
+    width: 3rem;
   }
   .narrowBtnFlip.disabled {
     opacity: 0.4;

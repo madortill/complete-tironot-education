@@ -247,7 +247,7 @@ function Apple({ onBack, openedApple, hodCompleted, setHodCompleted }) {
         aria-label="פתיחת מידע על מגמות הו״ד"
         style={{
           position: "absolute",
-          right: isIPhone ? "6rem" : "6rem",
+          right: isIPhone ? "6.5rem" : "6rem",
           bottom: isIPhone ? "1.5rem" : "1rem",
           margin: 0,
           cursor: "pointer",

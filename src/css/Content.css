@@ -11,13 +11,13 @@
 .nextBtn {
     position: absolute;
     top: 87%;
-    left: 21%;
+    left: 19%;
     transform: translate(-50%, -50%);
 }
 .backBtn {
     position: absolute;
     top: 87%;
-    left: 80%;
+    left: 82%;
     transform: translate(-50%, -50%);
 }
 .disabled {

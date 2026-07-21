@@ -350,9 +350,9 @@ width: 8rem;
 /* arrayShield */
 
 .btn-what {
-  background-color: #477fa3;
+  background-color: #D3EEFF;
   font-family: "rubik-bold";
-  color: white;
+  color: #2b5f80;
   font-size: 1.3rem;
   padding: 1rem;
   border: none;
@@ -363,7 +363,7 @@ width: 8rem;
 }
 .text-shield {
   font-family: "rubik";
-  color: #477fa3;
+  color: #D3EEFF;
   font-size: 1.15rem;
   padding:  0rem 3rem;
 

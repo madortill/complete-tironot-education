@@ -178,63 +178,81 @@ function Apple({ onBack, openedApple, hodCompleted, setHodCompleted }) {
           </foreignObject>
 
           {isHod && (
-            <foreignObject x="56" y="319" width="260" height="105">
-              <div
-                xmlns="http://www.w3.org/1999/xhtml"
-                style={{
-                  position: "relative",
-                  width: "100%",
-                  height: "100%",
-                  color: "white",
-                  textAlign: "center",
-                  direction: "rtl",
-                  textShadow: "0 1px 3px rgba(80, 0, 0, 0.5)",
-                }}
-              >
-                <p
-                  className="text-hod"
-                  style={{ margin: 0, fontSize: "17px" }}
-                >
-                  {currentApple.text2}
-                </p>
+  <foreignObject x="56" y="319" width="260" height="105">
+    <div
+      xmlns="http://www.w3.org/1999/xhtml"
+      dir="rtl"
+      style={{
+        position: "relative",
+        width: "100%",
+        height: "100%",
+        boxSizing: "border-box",
 
-                <p
-                  className="text-worm"
-                  style={{ margin: "0.2rem 0 0", fontSize: "14px" }}
-                >
-                  {currentApple.textWorm}
-                </p>
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
 
-                <button
-                 className="hod-btn"
-                 src={wormImg}
-                 alt="פתיחת מידע על מגמות הו״ד"
-                 onClick={() => setShowPopup(true)}
-                 style={{
-                   position: "absolute",
-                   width: "3.7rem",
-                   right: "6rem",
-                   bottom: "1rem",
-                   margin: 0,
-                   cursor: "pointer",
-                 }}>לחצו!</button>
-                {/* <img
-                  className="big-worm"
-                  src={wormImg}
-                  alt="פתיחת מידע על מגמות הו״ד"
-                  onClick={() => setShowPopup(true)}
-                  style={{
-                    position: "absolute",
-                    width: "3.7rem",
-                    right: "18px",
-                    bottom: "0",
-                    margin: 0,
-                    cursor: "pointer",
-                  }}
-                /> */}
-              </div>
-            </foreignObject>
-          )}
+        color: "white",
+        textAlign: "center",
+        textShadow: "0 1px 3px rgba(80, 0, 0, 0.5)",
+
+        WebkitTextSizeAdjust: "100%",
+        textSizeAdjust: "100%",
+      }}
+    >
+      <p
+        className="text-hod"
+        style={{
+          width: "100%",
+          margin: 0,
+          padding: 0,
+          fontSize: "17px",
+          lineHeight: 1.2,
+          textAlign: "center",
+          direction: "rtl",
+          unicodeBidi: "plaintext",
+          boxSizing: "border-box",
+        }}
+      >
+        {currentApple.text2}
+      </p>
+
+      <p
+        className="text-worm"
+        style={{
+          width: "100%",
+          margin: "0.2rem 0 0",
+          padding: 0,
+          fontSize: "14px",
+          lineHeight: 1.2,
+          textAlign: "center",
+          direction: "rtl",
+          unicodeBidi: "plaintext",
+          boxSizing: "border-box",
+        }}
+      >
+        {currentApple.textWorm}
+      </p>
+
+      <button
+        type="button"
+        className="hod-btn"
+        aria-label="פתיחת מידע על מגמות הו״ד"
+        onClick={() => setShowPopup(true)}
+        style={{
+          position: "absolute",
+          right: "50%",
+          bottom: "1rem",
+          transform: "translateX(50%)",
+          margin: 0,
+          cursor: "pointer",
+        }}
+      >
+        לחצו!
+      </button>
+    </div>
+  </foreignObject>
+)}
         </svg>
       </div>
 

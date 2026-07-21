@@ -31,7 +31,7 @@ useEffect(() => {
         {/* <div className="text-box">
   {theValues[selectedFlame]}
 </div> */}
-        <svg width="277" height="393" viewBox="0 0 307 393" fill="none" style={{ transform: "translateY(-20px)" }} xmlns="http://www.w3.org/2000/svg">
+        <svg width="260" height="393" viewBox="0 0 307 393" fill="none" style={{ transform: "translateY(-20px)" }} xmlns="http://www.w3.org/2000/svg">
         {selectedFlame && (
   <>
     <rect

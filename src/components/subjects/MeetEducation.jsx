@@ -17,12 +17,12 @@ import elfComment from "../../assets/images/characters/elf/comment.svg";
 import fairyCommentBrown from "../../assets/images/characters/fairyBrown/comment.svg";
 import elfCommentBrown from "../../assets/images/characters/elfBrown/comment.svg";
 
-import arrayEduImg from "../../assets/images/meetEducation/arrayEduImg.png";
+import arrayEduImg from "../../assets/images/meetEducation/arrayEduImg.svg";
 import fairyBubbles from "../../assets/images/characters/fairy/bubblesCharacter.svg";
 import elfBubbles from "../../assets/images/characters/elf/bubblesCharacter.svg";
 import fairyBubblesBrown from "../../assets/images/characters/fairyBrown/bubblesCharacter.svg";
 import elfBubblesBrown from "../../assets/images/characters/elfBrown/bubblesCharacter.svg";
-import arrayShieldImg from "../../assets/images/meetEducation/arrayShieldImg.png";
+import arrayShieldImg from "../../assets/images/meetEducation/arrayShieldImg.svg";
 import viArrays from "../../assets/images/meetEducation/viArrays.png";
 import bubbleTivoh from "../../assets/images/meetEducation/tivoh.svg";
 import bubbleSamhot from "../../assets/images/meetEducation/samhot.svg";

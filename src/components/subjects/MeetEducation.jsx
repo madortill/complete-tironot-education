@@ -228,7 +228,7 @@ const updateArrayProgress = (arrayName, changes) => {
       {page === 3 && (
         <div className="page4 page">
           <p className="title-content"> מבנה חיל החינוך</p>
-          <p className="sec-title-content">בית ספר למקצועות החינוך</p>
+          <p className="sec-title-content">בית ספר למקצועות החינוך הצבאי</p>
           <p className="text-content">זהו למעשה- בה”ד(בסיס הדרכה) החינוך.</p>
           <p className="text-content">
             אמון על הכשרת כוח אדם בחיל החינוך והנוער.

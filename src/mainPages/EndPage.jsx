@@ -4,10 +4,9 @@ import "../css/EndPage.css";
 import { useCharacter } from "../context/CharacterContext";
 import { useLearningProgress } from "../context/LearningProgressContext";
 
-import fairyEndBtn from "../assets/images/characters/fairy/endBtn.svg";
-import elfEndBtn from "../assets/images/characters/elf/endBtn.svg";
 
 import backBtnEnd from "../assets/images/backBtnEnd.svg";
+import endBtn from "../assets/images/endBtn.svg";
 
 import { useNavigate } from "react-router-dom";
 
@@ -30,7 +29,6 @@ const isEducationCourse =
     navigate("/content");
   };
 
-  const characterImg = character === "fairy" ? fairyEndBtn : elfEndBtn;
 
   return (
     <div>
@@ -56,7 +54,7 @@ const isEducationCourse =
 
       {/* 🔁 כפתור ראשי - התחלה מחדש */}
       <img
-        src={characterImg}
+        src={endBtn}
         alt="character"
         className="end-character"
         onClick={startOver}

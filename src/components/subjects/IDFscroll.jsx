@@ -8,11 +8,12 @@ import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useLearningProgress } from "../../context/LearningProgressContext";
 
+import imgScroll from "../../assets/images/IDFscroll/imgScroll.svg";
 import closeScroll from "../../assets/images/IDFscroll/closeScroll.png";
 import scrollWithText from "../../assets/images/IDFscroll/scrollWithText.svg";
 import goal from "../../assets/images/meetEducation/goal.png";
 
-import sparkleSound from "../../assets/audio/sparkle.mp3";
+
 
 import { useCharacter } from "../../context/CharacterContext";
 import fairyStarsIndipendent from "../../assets/images/characters/fairy/starsIndipendent.svg";
@@ -59,15 +60,7 @@ function IDFscroll({
     }
   }, [page]);
 
-  useEffect(() => {
-    if (showStars) {
-      const audio = new Audio(sparkleSound);
-      audio.volume = 0.6; // אופציונלי
-      audio.play().catch(() => {
-        // מונע קריסה אם הדפדפן חוסם autoplay
-      });
-    }
-  }, [showStars]);
+
 
   const totalPages = 5; // מספר העמודים בנושא
   const progressValue = page === 0 ? 0 : page;
@@ -167,8 +160,8 @@ const characterEnd =
 
           {/* Fade In אחרי 2 שניות */}
           {showStars && (
-            <div className="stars-fade">
-              <ScrollWithStars />
+            <div>
+              <img src={imgScroll} alt="imgScroll" className="stars-fade" />
             </div>
           )}
         </div>

@@ -3,6 +3,7 @@ import "../css/OpeningPage.css";
 import { useNavigate } from "react-router-dom";
 import About from "../components/About";
 import UserDetails from "../components/UserDetails";
+import btnStart from "../assets/images/btnStart.svg";
 import { useLearningProgress } from "../context/LearningProgressContext";
 
 function OpeningPage() {
@@ -69,9 +70,10 @@ function OpeningPage() {
             הלומדה הזו תשלים לך את כל המידע שצריך!
           </p>
 
-          <div className="btn-start-div" onClick={goToSecondPage}>
+          <img src={btnStart} alt="btnStart" className="btn-start-div" onClick={goToSecondPage} />
+          {/* <div className="btn-start-div" onClick={goToSecondPage}>
             <p className="btn-text">בואו נכיר!</p>
-          </div>
+          </div> */}
         </>
       )}
 

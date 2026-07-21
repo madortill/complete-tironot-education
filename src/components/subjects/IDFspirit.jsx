@@ -24,6 +24,57 @@ import elfBrownComment from "../../assets/images/characters/elfBrown/comment.svg
 import "../../css/IDFspirit.css";
 import FlipCardContainer from "../../components/FlipCardContainer.jsx";
 
+const SPIRIT_PARAGRAPH_PAGES = {
+  4: {
+    image: spiritMavo,
+    alt: "מבוא רוח צה״ל",
+    buttonPosition: { top: "70%", right: "5%" },
+    paragraph: {
+      title: "פסקה 1 – מבוא",
+      text: 'צבא ההגנה לישראל הוא צבאה של מדינת ישראל. צה"ל פועל בכפיפות לרשויות השלטון האזרחי הדמוקרטי ולחוקי המדינה. מטרת צה"ל היא להגן על קיומה של מדינת ישראל ועל עצמאותה, ולסכל מאמצי אויב לשבש את אורח החיים התקין בה. חיילי צה"ל מחויבים להילחם, להקדיש את כל כוחותיהם, ואף לחרף את נפשם להגנת מדינת ישראל, אזרחיה ותושביה. חיילי צה"ל יפעלו על פי ערכי צה"ל ופקודותיו, תוך שמירה על חוקי המדינה וכבוד האדם, וכיבוד ערכיה של מדינת ישראל כמדינה יהודית ודמוקרטית. ',
+    },
+  },
+  5: {
+    image: spiritHagdara,
+    alt: "הגדרת רוח צה״ל",
+    buttonPosition: { top: "70%", right: "5%" },
+    paragraph: {
+      title: "פסקה 2 – הגדרה",
+      text: 'רוח צה"ל" הוא תעודת הזהות הערכית של צה"ל, אשר ראוי שתעמוד ביסוד הפעולות של כל חייל וחיילת במסגרת צה"ל, בשירות סדיר ובשירות מילואים.צה"ל, בשירות סדיר ובשירות מילואים.<br> רוח צה"ל" וכללי הפעולה הנגזרים ממנו הם הקוד האתי של צה״ל. ״רוח צה״ל״ ישמש את צה"ל, על חייליו, מפקדיו, יחידותיו וחילותיו בעיצוב דפוסי הפעולה שלהם. על פי "רוח צה"ל" ינהגו, יחנכו ויבקרו את עצמם ואת זולתם. <br> "רוח צה"ל" יונק מארבעה מקורות: מסורת צה״ל ומורשת הלחימה שלו כצבא ההגנה לישראל, מסורת מדינת ישראל על עקרונותיה הדמוקרטיים, חוקיה ומוסדותיה, מסורת העם היהודי לדורותיו, ערכי מוסר אוניברסליים המבוססים על ערך האדם וכבודו.',
+    },
+  },
+  6: {
+    image: spiritYesod,
+    alt: "מקורות היסוד של רוח צה״ל",
+    buttonPosition: { top: "70%", right: "5%" },
+    paragraph: {
+      title: "פסקה 3 – מקורות היסוד",
+      text: `הגנת המדינה, אזרחיה ותושביה - מטרת צה"ל היא להגן על קיומה של מדינת ישראל, על עצמאותה ועל ביטחון אזרחיה ותושביה.
+
+      אהבת המולדת ונאמנות למדינה - ביסוד השירות בצה״ל עומדות אהבת המולדת והמחויבות והמסירות למדינת ישראל - מדינה דמוקרטית המהווה בית לאומי לעם היהודי - לאזרחיה ולתושביה.
+      
+      כבוד האדם - צה״ל וחייליו מחויבים לשמור על כבוד האדם. כל אדם הוא בעל ערך שאינו מותנה במוצא, בדת, בלאום, במין, במעמד ובתפקיד.
+      
+      ממלכתיות - צה״ל הוא צבא העם, צבא ממלכתי, הנתון למרות החוק והממשלה. חיילי צה״ל יפעלו כשרק המשימה, ערכי צה״ל וביטחון המדינה ראשונים לנגד עיניהם, ויעשו זאת ביושרה, בענייניות ובייצוגיות.`,
+    },
+  },
+  7: {
+    image: spiritArahim,
+    alt: "ערכי רוח צה״ל",
+    buttonPosition: { top: "70%", right: "5%" },
+    paragraph: {
+      title: "פסקה 4 – ערכים",
+      text: `הגנת המדינה, אזרחיה ותושביה - מטרת צה"ל היא להגן על קיומה של מדינת ישראל, על עצמאותה ועל ביטחון אזרחיה ותושביה.
+
+אהבת המולדת ונאמנות למדינה - ביסוד השירות בצה״ל עומדות אהבת המולדת והמחויבות והמסירות למדינת ישראל - מדינה דמוקרטית המהווה בית לאומי לעם היהודי - לאזרחיה ולתושביה.
+
+כבוד האדם - צה״ל וחייליו מחויבים לשמור על כבוד האדם. כל אדם הוא בעל ערך שאינו מותנה במוצא, בדת, בלאום, במין, במעמד ובתפקיד.
+
+ממלכתיות - צה״ל הוא צבא העם, צבא ממלכתי, הנתון למרות החוק והממשלה. חיילי צה״ל יפעלו כשרק המשימה, ערכי צה״ל וביטחון המדינה ראשונים לנגד עיניהם, ויעשו זאת ביושרה, בענייניות ובייצוגיות.`,
+    },
+  },
+};
+
 function IDFspirit({
   page,
   setPage,
@@ -38,9 +89,11 @@ function IDFspirit({
   const [showStars, setShowStars] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
   const [showWarning, setShowWarning] = useState(false);
+  const [showSpiritParagraph, setShowSpiritParagraph] = useState(false);
   const { learningProgress } = useLearningProgress();
   const selectedCourse = learningProgress?.userDetails?.course || "";
   const isEducationCourse = selectedCourse === "חינוך";
+  const currentSpiritParagraph = SPIRIT_PARAGRAPH_PAGES[page];
   const {
     text,
     isSubmitted,
@@ -71,6 +124,10 @@ function IDFspirit({
   //     });
   //   }
   // }, [showStars]);
+
+  useEffect(() => {
+    setShowSpiritParagraph(false);
+  }, [page]);
 
   const totalPages = 10; // מספר העמודים בנושא
   const progressValue = page === 0 ? 0 : page;
@@ -185,7 +242,7 @@ function IDFspirit({
               onChange={(e) => setProgress({ text: e.target.value })}
               disabled={isSubmitted}
             />
-            <img src={butterfly} className="butterfly" />
+           
           </div>
 
           {showWarning && (
@@ -224,37 +281,60 @@ function IDFspirit({
           <img src={spiritParts} alt="spiritParts" className="spiritParts" />
         </div>
       )}
-      {page === 4 && (
-        <div className="page5 page">
+      {page >= 4 && page <= 7 && currentSpiritParagraph && (
+        <div className={`page${page + 1} page spirit-paragraph-page`}>
           <p className="title-content">חשיבות רוח צה"ל</p>
-          <p className="sec-title-content">"הבא" מוביל להסבר על כל פסקה</p>
-          <img src={spiritMavo} alt="spiritMavo" className="spiritParts" />
-        </div>
-      )}
-      {page === 5 && (
-        <div className="page6 page">
-          <p className="title-content">חשיבות רוח צה"ל</p>
-          <p className="sec-title-content">"הבא" מוביל להסבר על כל פסקה</p>
-          <img
-            src={spiritHagdara}
-            alt="spiritHagdara"
-            className="spiritParts"
-          />
-        </div>
-      )}
-      {page === 6 && (
-        <div className="page7 page">
-          <p className="title-content">חשיבות רוח צה"ל</p>
-          <p className="sec-title-content">"הבא" מוביל להסבר על כל פסקה</p>
-          <img src={spiritYesod} alt="spiritYesod" className="spiritParts" />
-        </div>
-      )}
-      {page === 7 && (
-        <div className="page8 page">
-          <p className="title-content">חשיבות רוח צה"ל</p>
-          <p className="sec-title-content">"הבא" מוביל להסבר על כל פסקה</p>
-          <img src={spiritArahim} alt="spiritArahim" className="spiritParts" />
-          {showPopup && (
+          <p className="sec-title-content">
+          לחצו על כפתור ה + כדי לקרוא את הפסקה מוגדלת
+          </p>
+
+          <div className="spirit-paragraph-stage">
+            <img
+              src={currentSpiritParagraph.image}
+              alt={currentSpiritParagraph.alt}
+              className="spiritParts spirit-paragraph-image"
+            />
+
+            <button
+              type="button"
+              className={`spirit-paragraph-hotspot ${
+                showSpiritParagraph ? "spirit-paragraph-hotspot--active" : ""
+              }`}
+              style={currentSpiritParagraph.buttonPosition}
+              onClick={() => setShowSpiritParagraph((current) => !current)}
+              aria-expanded={showSpiritParagraph}
+            >
+              {showSpiritParagraph ? "-" : "+"}
+            </button>
+          </div>
+
+          {showSpiritParagraph && (
+            <div
+  key={`spirit-paragraph-${page}`}
+  className={`spirit-paragraph-card spirit-paragraph-card--page-${page}`}
+  role="region"
+  aria-label={currentSpiritParagraph.paragraph.title}
+>
+  <button
+    type="button"
+    className="spirit-paragraph-card__close"
+    onClick={() => setShowSpiritParagraph(false)}
+    aria-label="סגירת הטקסט המוגדל"
+  >
+    ×
+  </button>
+
+  <p className="spirit-paragraph-card__title">
+    {currentSpiritParagraph.paragraph.title}
+  </p>
+
+  <p className="spirit-paragraph-card__text">
+    {currentSpiritParagraph.paragraph.text}
+  </p>
+</div>
+          )}
+
+          {page === 7 && showPopup && (
             <div className="popup-overlay">
               <div className="popup-content-value">
                 <img src={popUpValues} alt="popUpValues" />

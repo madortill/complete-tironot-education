@@ -29,22 +29,10 @@
 .btn-start-div {
     width: 7rem;             /* רוחב מלא של הדיב */
   height: 10rem;           /* אפשר לשנות לפי הצורך */
-  background-image: url('../assets/images/btnStart.png'); /* הנתיב לתמונה */
-  background-size: contain;    /* ממלא את הדיב כולו */
-  background-position: center; /* ממקם את התמונה במרכז */
-  background-repeat: no-repeat; /* מונע חזרה של התמונה */
   display: flex;
   align-items: center;
 }
-.btn-text {
-    position: relative;
-    top: 0.2rem;
-    right: 1.2rem;
-    font-family: "noot";
-    color: white;
-    width: 4rem;
-    font-size: 1.3rem;
-}
+
 .fade-in{
   animation: fadeIn 0.5s ease forwards;
 }
@@ -100,15 +88,14 @@
     font-family: "rubik-bold";
 }
 .toIntro-btn {
-    font-family: "noot";
+    font-family: "secularOne";
     color: white;
-    background-color: #C38D94;
+    background-color: #94B48E;
     border: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
-    padding-top: 0.8rem;
     border-radius: 5px;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     text-align: center;
     transition: 0.2s;
 }

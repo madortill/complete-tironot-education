@@ -5,31 +5,10 @@ function SpiritWithStars() {
     <div>
       <svg width="241" height="290" viewBox="0 0 241 290" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g filter="url(#filter0_f_246_145)">
-<rect x="26.2715" y="22.4432" width="184" height="247" fill="#C38D94"/>
+<rect x="26.2715" y="22.4432" width="184" height="247" fill="#94B48E"/>
 </g>
 <rect x="34.2715" y="30.4432" width="167" height="230" rx="6" fill="url(#pattern0_246_145)"/>
 
-<g transform="translate(14, 5)">
-  {/* כוכב גדול */}
-  <g className="twinkle" style={{ animationDuration: '2s', animationDelay: '0s', transform: 'translate(-8px, -5px)' }}>
-    <path d="M12.1128 7.28693L14.1445 1.44318L16.4302 7.28693L22.2715 10.2088L16.4302 12.5994L14.1445 18.4432L12.1128 12.5994L6.27148 10.2088L12.1128 7.28693Z" fill="#FFFFD7" stroke="#FFFFD7"/>
-  </g>
-
-  {/* כוכב קטן */}
-  <g className="twinkle" style={{ animationDuration: '2s', animationDelay: '0s', transform: 'translate(-8px, -5px)' }}>
-    <path d="M5.65244 22.5682L7.17625 18.4432L8.89053 22.5682L13.2715 24.6307L8.89053 26.3182L7.17625 30.4432L5.65244 26.3182L1.27148 24.6307L5.65244 22.5682Z" fill="#FFFFD7" stroke="#FFFFD7"/>
-  </g>
-</g>
-<g transform="translate(-14, -5)">
-{/* <!-- כוכב גדול למטה  */}
-<g className="twinkle" style={{ animationDuration: '2s', animationDelay: '0s', transform: 'translate(-8px, -5px)' }}>
-<path d="M229.113 252.287L231.145 246.443L233.43 252.287L239.271 255.209L233.43 257.599L231.145 263.443L229.113 257.599L223.271 255.209L229.113 252.287Z" fill="#FFFFD7" stroke="#FFFFD7"/>
-</g>
-{/* <!-- כוכב קטן למטה --> */}
-<g className="twinkle" style={{ animationDuration: '2s', animationDelay: '0s', transform: 'translate(-8px, -5px)' }}>
-<path d="M222.652 267.568L224.176 263.443L225.891 267.568L230.271 269.631L225.891 271.318L224.176 275.443L222.652 271.318L218.271 269.631L222.652 267.568Z" fill="#FFFFD7" stroke="#FFFFD7"/>
-</g>
-</g>
 <defs>
 <filter id="filter0_f_246_145" x="6.67148" y="2.84318" width="223.2" height="286.2" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
 <feFlood floodOpacity="0" result="BackgroundImageFix"/>

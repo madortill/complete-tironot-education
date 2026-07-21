@@ -161,8 +161,8 @@
    .flip-card-front {
        border-radius: 0.8rem;
        overflow: hidden;
-       color: white;
-       background-color: #477FA3;
+       color: #2A5470;
+       background-color: #D3EEFF;
        display: flex;
        flex-direction: column;
        justify-content: center;
@@ -184,7 +184,7 @@
     margin-top: 0.6rem;
     font-family: rubik;
     font-size: 1rem;
-    color: #004288;
+    color: #D3EEFF;
   }
   
   .done-text {
@@ -246,14 +246,14 @@
     cursor: not-allowed;
   }
   .btnHard {
-    width: 10rem;
+    width: 6rem;
     margin-top: 1rem;
   }
   .commentImg {
     margin-top: 1rem;
   }
   .comment-hard-text {
-    color: white;
+    color: #2A5470;
     font-family: "rubik";
     width: 10rem;
     font-size: 1.1rem;
@@ -274,11 +274,182 @@
   width: 23rem;
 }
 .textFront {
-  font-size: 3rem;
+  /* font-size: 3rem; */
   font-family: "rubik-bold";
 }
 }
-@media (max-width: 350px) {
+/* ==================================================
+   עמודים 4–7: כפתור אחד על התמונה ופסקה אחת לכל עמוד
+================================================== */
+
+.spirit-paragraph-page {
+  box-sizing: border-box;
+}
+
+.spirit-paragraph-stage {
+  position: relative;
+  width: min(23rem, 88vw);
+  margin: 0.4rem auto 0;
+  box-sizing: border-box;
+}
+
+/* שומר את קובץ ה-SVG כתמונה רגילה */
+/* .spirit-paragraph-stage .spirit-paragraph-image {
+  position: static ;
+  inset: auto ;
+  display: block;
+  width: 80% ;
+  max-width: 100%;
+  height: auto ;
+  margin: 0 ;
+  transform: none ;
+} */
+
+/* בכל עמוד קיים רק הכפתור של הפסקה ששייכת אליו */
+.spirit-paragraph-hotspot {
+  position: absolute;
+  margin-top: -17.8rem;
+  z-index: 1;
+  min-width: 2rem;
+  padding: 0.45rem 0.7rem;
+  border: 0.12rem solid #ffffff;
+  border-radius: 0.65rem;
+  background: #477fa3;
+  color: #ffffff;
+  font-family: "rubik-bold", sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 0.18rem 0.55rem rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.spirit-paragraph-hotspot:hover,
+.spirit-paragraph-hotspot:focus-visible {
+  transform: scale(1.05);
+  outline: none;
+}
+
+
+
+.spirit-paragraph-card {
+  position: relative;
+  top: -5rem;
+  z-index: 5;
+  width: min(22rem, 88vw);
+  max-height: 9rem;
+  overflow-y: auto;
+  margin: 0.75rem auto 4.8rem;
+  padding: 1rem 1.2rem;
+  box-sizing: border-box;
+  direction: rtl;
+  text-align: center;
+  background: #ffffff;
+  border: 0.12rem solid #d3eeff;
+  border-radius: 0.9rem;
+  color: #477fa3;
+  box-shadow: 0 0.25rem 0.8rem rgba(0, 66, 136, 0.18);
+  animation: spiritParagraphFade 0.38s ease both;
+}
+
+.spirit-paragraph-card__title {
+  margin: 0 0 0.45rem;
+  padding-inline: 1.2rem;
+  color: #004288;
+  font-family: "rubik-bold", sans-serif;
+  font-size: 1.15rem;
+}
+
+.spirit-paragraph-card__text {
+  margin: 0;
+  font-family: "rubik", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.spirit-paragraph-card__close {
+  position: absolute;
+  top: 0.35rem;
+  left: 0.45rem;
+  width: 1.55rem;
+  height: 1.55rem;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: 50%;
+  background: #477fa3;
+  color: #ffffff;
+  font-family: "rubik-bold", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+/* עמוד 4 */
+.spirit-paragraph-card--page-4 {
+  top: -13.5rem;
+  margin: 0.75rem auto 4.8rem;
+}
+
+/* עמוד 5 */
+.spirit-paragraph-card--page-5 {
+  top: -10rem;
+  margin: 0.75rem auto 3rem;
+}
+
+/* עמוד 6 */
+.spirit-paragraph-card--page-6 {
+  top: -23rem;
+  margin: 0.75rem auto 5rem;
+}
+
+/* עמוד 7 */
+.spirit-paragraph-card--page-7 {
+  top: -23rem;
+  margin: 0.75rem auto 4rem;
+}
+
+@keyframes spiritParagraphFade {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 375px), (max-height: 750px) {
+  .spirit-paragraph-stage {
+    width: min(19rem, 82vw);
+  }
+
+  .spirit-paragraph-hotspot {
+
+    min-width: 2rem;
+    padding: 0.4rem 0.55rem;
+    font-size: 0.8rem;
+  }
+
+  .spirit-paragraph-card {
+    width: min(19rem, 86vw);
+    max-height: 7.8rem;
+    margin-bottom: 4.5rem;
+    padding: 0.8rem 0.9rem;
+  }
+
+  .spirit-paragraph-card__title {
+    font-size: 1rem;
+  }
+
+  .spirit-paragraph-card__text {
+    font-size: 0.92rem;
+    line-height: 1.45;
+    white-space: pre-line;
+  }
+}
+/* @media (max-width: 350px) {
   .flip-card {
        width: 6.8rem;
        height: 4.5rem;
@@ -318,4 +489,4 @@
   margin-top: 0.5rem
 
 }
- }
+ } */

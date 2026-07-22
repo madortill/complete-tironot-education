@@ -169,7 +169,7 @@
    }
    
    .flip-card-back {
-       background-color: #477FA3;
+       background-color: #D3EEFF;
        border-radius: 0.8rem;
        color: white;
        transform: rotateY(180deg);

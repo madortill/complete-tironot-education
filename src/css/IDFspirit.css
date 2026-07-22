@@ -312,11 +312,13 @@
   margin: 0 ;
   transform: none ;
 } */
-
+.spirit-image-wrapper {
+  position: relative;
+}
 /* בכל עמוד קיים רק הכפתור של הפסקה ששייכת אליו */
 .spirit-paragraph-hotspot {
   position: absolute;
-  margin-top: -17.8rem;
+  /* margin-top: -17.8rem; */
   z-index: 1;
   min-width: 2rem;
   padding: 0.45rem 0.7rem;
@@ -336,6 +338,25 @@
   transform: scale(1.05);
   outline: none;
 }
+.spirit-paragraph-hotspot--page-4 {
+  top: 3rem;
+  right: 1%;
+}
+
+.spirit-paragraph-hotspot--page-5 {
+  top: 6rem;
+  right: 1%;
+}
+
+.spirit-paragraph-hotspot--page-6 {
+  top: 10.5rem;
+  right: 1%;
+}
+
+.spirit-paragraph-hotspot--page-7 {
+  top: 16rem;
+  right: 1%;
+}
 
 
 
@@ -343,8 +364,8 @@
   position: relative;
   top: -5rem;
   z-index: 5;
-  width: min(22rem, 88vw);
-  max-height: 9rem;
+  width: min(15rem, 88vw);
+  max-height: 22rem;
   overflow-y: auto;
   margin: 0.75rem auto 4.8rem;
   padding: 1rem 1.2rem;
@@ -394,13 +415,13 @@
 }
 /* עמוד 4 */
 .spirit-paragraph-card--page-4 {
-  top: -13.5rem;
+  top: -23rem;
   margin: 0.75rem auto 4.8rem;
 }
 
 /* עמוד 5 */
 .spirit-paragraph-card--page-5 {
-  top: -10rem;
+  top: -23rem;
   margin: 0.75rem auto 3rem;
 }
 
@@ -441,10 +462,9 @@
   }
 
   .spirit-paragraph-card {
-    width: min(19rem, 86vw);
-    max-height: 7.8rem;
-    margin-bottom: 4.5rem;
-    padding: 0.8rem 0.9rem;
+    z-index: 5;
+    width: min(12rem, 88vw);
+    max-height: 19rem;
   }
 
   .spirit-paragraph-card__title {

@@ -181,8 +181,8 @@ function IDFspirit({
         ? fairyBrownComment
         : fairyComment
       : isGadna
-        ? elfBrownComment
-        : elfComment;
+      ? elfBrownComment
+      : elfComment;
 
   // תנאי לכפתור
   const isNextDisabled = !isNextUnlocked;
@@ -242,7 +242,6 @@ function IDFspirit({
               onChange={(e) => setProgress({ text: e.target.value })}
               disabled={isSubmitted}
             />
-           
           </div>
 
           {showWarning && (
@@ -277,7 +276,7 @@ function IDFspirit({
       {page === 3 && (
         <div className="page4 page">
           <p className="title-content">חשיבות רוח צה"ל</p>
-          <p className="sec-title-content">"הבא" מוביל להסבר על כל שקופית</p>
+          <p className="sec-title-content">"הבא" מוביל להסבר על כל פסקה</p>
           <img src={spiritParts} alt="spiritParts" className="spiritParts" />
         </div>
       )}
@@ -285,7 +284,7 @@ function IDFspirit({
         <div className={`page${page + 1} page spirit-paragraph-page`}>
           <p className="title-content">חשיבות רוח צה"ל</p>
           <p className="sec-title-content">
-          לחצו על כפתור ה + כדי לקרוא את הפסקה מוגדלת
+            לחצו על כפתור ה + כדי לקרוא את הפסקה מוגדלת
           </p>
 
           <div className="spirit-paragraph-stage">
@@ -297,10 +296,9 @@ function IDFspirit({
 
             <button
               type="button"
-              className={`spirit-paragraph-hotspot ${
+              className={`spirit-paragraph-hotspot spirit-paragraph-hotspot--page-${page} ${
                 showSpiritParagraph ? "spirit-paragraph-hotspot--active" : ""
               }`}
-              style={currentSpiritParagraph.buttonPosition}
               onClick={() => setShowSpiritParagraph((current) => !current)}
               aria-expanded={showSpiritParagraph}
             >
@@ -310,28 +308,28 @@ function IDFspirit({
 
           {showSpiritParagraph && (
             <div
-  key={`spirit-paragraph-${page}`}
-  className={`spirit-paragraph-card spirit-paragraph-card--page-${page}`}
-  role="region"
-  aria-label={currentSpiritParagraph.paragraph.title}
->
-  <button
-    type="button"
-    className="spirit-paragraph-card__close"
-    onClick={() => setShowSpiritParagraph(false)}
-    aria-label="סגירת הטקסט המוגדל"
-  >
-    ×
-  </button>
+              key={`spirit-paragraph-${page}`}
+              className={`spirit-paragraph-card spirit-paragraph-card--page-${page}`}
+              role="region"
+              aria-label={currentSpiritParagraph.paragraph.title}
+            >
+              <button
+                type="button"
+                className="spirit-paragraph-card__close"
+                onClick={() => setShowSpiritParagraph(false)}
+                aria-label="סגירת הטקסט המוגדל"
+              >
+                ×
+              </button>
 
-  <p className="spirit-paragraph-card__title">
-    {currentSpiritParagraph.paragraph.title}
-  </p>
+              <p className="spirit-paragraph-card__title">
+                {currentSpiritParagraph.paragraph.title}
+              </p>
 
-  <p className="spirit-paragraph-card__text">
-    {currentSpiritParagraph.paragraph.text}
-  </p>
-</div>
+              <p className="spirit-paragraph-card__text">
+                {currentSpiritParagraph.paragraph.text}
+              </p>
+            </div>
           )}
 
           {page === 7 && showPopup && (
@@ -406,10 +404,10 @@ function IDFspirit({
             למדנו מהי רוח צה"ל, ולמה חשוב שיובילו אותנו ערכים בעת ביצוע המשימה.{" "}
           </p>
           <p className="text-content">
-          {isEducationCourse
-    ? `תפקידכם כמש"קי חינוך יהיה להטמיע אותם ביחידות אליהן תגיעו! וכמובן,
+            {isEducationCourse
+              ? `תפקידכם כמש"קי חינוך יהיה להטמיע אותם ביחידות אליהן תגיעו! וכמובן,
        מי מכם שיהיה מש"ק הסברה יקדם ערכים אלו בהסברות שיעביר.`
-    : `חלק מתפקידכם כחיילים לעתיד בחיל החינוך יהיה להטמיע ולפעול לפי ערכים אלו במקומות אליהם תגיעו בשירותכם הצבאי!`}
+              : `חלק מתפקידכם כחיילים לעתיד בחיל החינוך יהיה להטמיע ולפעול לפי ערכים אלו במקומות אליהם תגיעו בשירותכם הצבאי!`}
           </p>
           <img
             className={`btnHard ${!showComment ? "grow-shrink" : ""}`}

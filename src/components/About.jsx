@@ -30,7 +30,7 @@ function About() {
             <p className="list-text-about">סמל מאיה מרום</p>
             <h3 className="list-text-about">מומחי תוכן:</h3>
             <p className="list-text-about">סמ"ר שחר בלישה</p>
-            <p className="list-text-about">סמל סתיו ארגוב</p>
+            <p className="list-text-about">סמ"ר סתיו ארגוב</p>
             <h3 className="list-text-about">רמ"ד טי"ל:</h3>
             <p className="list-text-about">רס"מ עדן בן חמו</p>
             <h3 className="list-text-about">גרסה:</h3>
